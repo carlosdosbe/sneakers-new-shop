@@ -12,6 +12,7 @@
   --bg-color: #e5e5e5;
   --main-color: #f29494;
   --second-color: #fff;
+  --other-color: #868686;
   --big-font: 5.5rem;
   --p-font: 1rem;
 }
@@ -124,8 +125,8 @@ section {
 }
 
 .hero-img {
-  height: 600px;
-  width: 600px;
+  height: 800px;
+  width: 100%;
 }
 
 .hero-img img {
@@ -140,4 +141,59 @@ section {
   align-items: center;
   text-align: center;
   gap: 30px;
+}
+
+.hero-text h1 {
+  font-size: var(--big-font);
+  line-height: 1.3;
+  font-weight: 800;
+}
+
+.hero-text h4 {
+  margin: 5px 0 20px;
+  color: var(--main-color);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.hero-text p {
+  color: var(--other-color);
+  font-size: var(--p-font);
+  font-weight: 500;
+  line-height: 26px;
+  max-width: 550px;
+  margin-bottom: 4rem;
+}
+
+.box {
+  background: var(--second-color);
+  padding: 25px 20px;
+  border-radius: 1rem;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  transition: all ease 0.55s;
+  cursor: pointer;
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.box h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.box h5 {
+  color: var(--main-color);
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.box:hover {
+  transform: translateY(-25px) scale(1.1);
 }
